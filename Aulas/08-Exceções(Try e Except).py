@@ -7,7 +7,7 @@
 # Exemplo:
 #   linha 1 - Ok                  (será executada sem nenhum problema)
 #   linha 2 - ocorreu o bug       (aqui ocorre o bug e o programa vai "pular" para a exceção a partir daqui)
-#   linha 3 - Ok                  (está linha não será executada, apesar de estar Ok)
+#   linha 3 - Ok                  (esta linha não será executada, apesar de estar Ok)
 
 
 # Exemplo 1: Tentando convertar uma string não numérica para int (bug proposital) para cair no except
