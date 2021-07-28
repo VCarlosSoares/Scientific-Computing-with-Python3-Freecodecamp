@@ -14,3 +14,12 @@ alunos = ['Vitor', 'Carlos', 'Soares']
 for aluno in alunos:
     print('Bem-vindo {}!'.format(aluno))
 print('Finalizado!\n')
+
+# Exemplo 3: encontrando o maior valor em uma lista de números
+maior_numero = -1
+print('Antes do Loop, maior número:', maior_numero)
+for numero in [9, 41, 12, 3, 74, 15]:
+    if numero > maior_numero:
+        maior_numero = numero
+    print('Durante o Loop, maior número:', maior_numero)
+print('Finalizou o Loop, maior número:', maior_numero)
