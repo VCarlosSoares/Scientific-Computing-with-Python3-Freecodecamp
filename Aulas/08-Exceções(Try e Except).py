@@ -3,7 +3,7 @@
 # Caso a tentativa (try) falhe, gerando bug, o programa pula para a exceção (except) onde há um tratamento genérico para o problema
 # Este tratamento genérico não interrompe o fluxo de execução do programa, o que aconteceria se não tivesse o try/except
 
-# Obs.: o try é executado seguencialmente e até que ocorra uma exceção (ou totalmente caso não ocorra exceção)
+# Obs.: o try é executado sequencialmente e até que ocorra uma exceção (ou totalmente caso não ocorra exceção)
 # Exemplo:
 #   linha 1 - Ok                  (será executada sem nenhum problema)
 #   linha 2 - ocorreu o bug       (aqui ocorre o bug e o programa vai "pular" para a exceção a partir daqui)
