@@ -16,6 +16,13 @@ print(str4)
 x = int(str3) + 1
 print(x)
 
+a = 'Olá'
+b = a + 'Vitor'
+print(b)
+
+c = a + ' ' + 'Vitor'
+print(c, '\n')
+
 ### Dados de Entrada ###
 # É recomendado/default que se leia os dados como uma string e que possa realizar conversões posteriormente se necessário
 # Isso nos da mais controle sobre erros de utilização ou entradas invalidas (try/except)
@@ -85,3 +92,74 @@ for letra in 'banana':
     if letra == 'a':
         qtdA = qtdA + 1
 print('Quantidade total em que aparece a letra a na string banana:', qtdA)
+
+
+### Cortando uma String ###
+# Podemos "cortar" um pedaço de uma string com a sintaxe frase[4:7]
+# Devemos passar dois elementos para cortar a string, o indice de onde começa e o indice de onde acaba
+# Vale ressaltar que isso inclui o elemento do indice inicial (4) mas não inclui o elemento do indice final (7)
+# Obs.: Quando passamos um índice maior do que a string possui no segundo valor, o python entende
+# que é para ir até o final da strng
+
+# Se não inserirmos o primeiro elemento, exemplo [:7] o python assume que queremos ir do começo até o elemento indicado (7)
+# Se não inserirmos o segundo elemento, exemplo [4:] o python assume que queremos partir daquele elemento até o final da string
+
+# Exemplo 7: utilizando pedaços de uma string 'Monty Python'
+# Indice:                                      0123456789...
+s = 'Monty Python'
+print('\nString:', s)
+
+print('Indice 0 até o 4:', s[0:4])
+print('Indice 6 até o 7:', s[6:7])
+print('Indice 6 até o 20 (obs.: não existe indice 20 para essa string):', s[6:20])
+
+print('Do começo da string até o indice 7:', s[:7])
+print('O indice 7 até o final da string:', s[7:])
+print('Toda a string: ', s[:], '\n')
+
+### in ###
+# Podemos utilizar o operador lógico in para encontrar um caractere ou um pedaço de string dentro de outra string
+# Ele vai retornar um tipo booleano (true ou false) caso encontre ou não
+# Podemos utilizar o in junto a um if por exemplo
+
+# Exemplo 8: utilizando o operador in para encontrar uma parte de string em outra string
+fruta = 'banana'
+n = 'n' in fruta
+print(n)
+
+print(('m' in fruta))
+
+print(('nan' in fruta))
+
+if 'a' in fruta:
+    print('A fruta possui a letra a\n')
+
+# Podemos utilizar os operadores < e > para verificar se uma parte da string está no começo ou no final da string
+# Exemplo 9: Comparando strings com < e >
+fruta = 'banana'
+palavra = 'ba'
+
+if palavra < 'banana':
+    print('Está no começo da string banana\n')
+elif palavra > 'banana':
+    print('Está no final da string banana\n')
+else:
+    print('Sua string é banana\n')
+
+### Biblioteca integrada para String ###
+# O Python possui uma biblioteca integrada de funções para strings, quando chamamos uma string e colocamos um . podemos observa-lá
+# Vamos utilizar algumas dessas funções, começando com:
+# str.lower(): deixa todas as letras minusculas
+# str.upper(): deixa todas as letras maiusculas
+
+# Exemplo 10: função para tornar todas as letras maiúsculas ou minúsculas
+msg = 'Olá Vitor'
+print(msg)
+
+msgMin = msg.lower()  # lower = minúsculo
+print(msgMin)
+
+print(msg.upper())    # upper = maiúsculo
+
+print('Olá'.upper())
+
