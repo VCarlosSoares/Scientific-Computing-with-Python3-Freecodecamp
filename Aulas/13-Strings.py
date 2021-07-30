@@ -162,4 +162,5 @@ print(msgMin)
 print(msg.upper())    # upper = maiúsculo
 
 print('Olá'.upper())
+print('Olá'.lower())
 
