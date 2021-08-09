@@ -103,3 +103,9 @@ for numero in [9, 41, 12, 3, 74, 15]:
         #break - poderiamos adicionar um break aqui já que nosso objetivo é verificar se o número desejado está na lista
     print(achou, numero)
 print('Loop finalizado! Encontramos o número desejado?', achou, '\n')
+
+# Exemplo 10: usando range
+frase = 'Vitor'
+for i in range(len(frase)):
+    print(i)
+    

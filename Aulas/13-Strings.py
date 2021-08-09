@@ -164,3 +164,15 @@ print(msg.upper())    # upper = maiúsculo
 print('Olá'.upper())
 print('Olá'.lower())
 
+# Exemplo 11: Invertendo strings usando loops
+
+frase = list("Vitor")
+j = len(frase) - 1
+for i in range(int(j / 2)):
+    aux = frase[i]
+    frase[i] = frase[j]
+    frase[j] = aux
+    j = j - 1
+
+str1 = ''.join(frase)
+print(str1)
